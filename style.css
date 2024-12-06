@@ -1,0 +1,315 @@
+@font-face{
+    font-family:"Karma";
+    src:url(../font/Karma-FreeVersion.otf);
+}
+@font-face{
+    font-family:"Abibas";
+    src:url(../font/Abibas.otf);
+}
+@font-face{
+    font-family:"Libre";
+    src:url(../font/LibreBaskerville-Regular.otf);
+}
+@font-face{
+    font-family:"Medieval";
+    src:url(../font/MedievalSharp-Book.otf);
+}
+@font-face{
+    font-family:"Cinzel";
+    src:url(../font/CinzelDecorative-Regular.otf);
+}
+
+body {
+    background-color: #ABA8B2;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Empêche les débordements horizontaux */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: dashed;
+    border-bottom-color: #1F2041;
+    height: 100px;
+    background-color: #885A89;
+}
+
+.navbar img {
+    height: 100%;
+}
+
+.navbar h1 {
+    margin: 0 auto;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: Cinzel;
+    text-shadow: 
+        0 0 5px #ABA8B2, 
+        0 0 10px #ABA8B2, 
+        0 0 20px #ABA8B2, 
+        0 0 30px #e3e3e3, 
+        0 0 40px #e3e3e3, 
+        0 0 50px #e3e3e3, 
+        0 0 75px #e3e3e3;
+}
+
+
+/* Event section */
+.event {
+    text-align: center;
+    margin: 20px 0;
+}
+.event h1{
+    font-family: Cinzel;
+    color: #885A89;
+}
+.event h1, .event p {
+    text-align: center;
+    margin: 10px 0;
+    font-family: Cinzel;
+}
+
+/* Row container */
+.row {
+    display: flex;
+    justify-content: space-around; /* Crée de l'espace entre les colonnes */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    margin: 0 auto; /* Centre la rangée */
+    width: 95%; /* Adapte la rangée à la largeur de la page */
+    gap: 20px; /* Ajoute de l'espace entre les colonnes */
+}
+
+/* Image container */
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%; /* Limite la largeur de la colonne d'images */
+    gap: 10px; /* Ajoute un espace entre les images */
+}
+
+.img-container img {
+    width: 200px; /* Les images occupent toute la largeur de la colonne */
+    height: 150px; /* Maintient les proportions des images */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Table center styling */
+.table-center {
+    flex: 1; /* La table centrale occupe tout l'espace disponible */
+    max-width: 100%; /* Limite la largeur pour éviter les débordements */
+    align-self: flex-start; /* Aligne la table en haut */
+}
+
+/* Table right styling */
+.table-right {
+    flex: 1; /* La table de droite partage l'espace restant */
+    max-width: 50%; /* Limite la largeur pour éviter les débordements */
+    align-self: flex-start; /* Aligne la table en haut */
+}
+
+/* Table general styling */
+table {
+    border-collapse: collapse;
+    width: 100%; /* La table occupe toute la largeur de sa colonne */
+    margin: 0 auto; /* Centre la table dans sa colonne */
+    overflow: hidden; /* Supprime tout débordement interne */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px; /* Réduit les padding pour éviter les débordements */
+    text-align: center;
+    font-size: 14px; /* Taille de police optimisée pour un affichage compact */
+}
+
+/* Social media icons */
+.reseaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0;
+    gap: 15px;
+}
+
+.reseaux i {
+    font-size: 50px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.fa-instagram {
+    color: #C13584;
+}
+
+.fa-twitch {
+    color: #9146FF;
+}
+
+.fa-tiktok {
+    color: #000000;
+}
+
+.fa-instagram:hover {
+    color: yellow;
+    text-shadow: 
+        0 0 5px yellow, 
+        0 0 10px yellow, 
+        0 0 20px yellow, 
+        0 0 30px yellow, 
+        0 0 40px yellow, 
+        0 0 50px yellow, 
+        0 0 75px yellow;
+}
+
+.fa-twitch:hover {
+    color: #9b59b6;
+    text-shadow: 
+        0 0 5px #9b59b6, 
+        0 0 10px #9b59b6, 
+        0 0 20px #9b59b6, 
+        0 0 30px #9b59b6, 
+        0 0 40px #9b59b6, 
+        0 0 50px #9b59b6, 
+        0 0 75px #9b59b6;
+}
+
+.fa-tiktok:hover {
+    color: #7B2D26;
+    text-shadow: 
+        0 0 5px #7B2D26, 
+        0 0 10px #7B2D26, 
+        0 0 20px #7B2D26, 
+        0 0 30px #7B2D26, 
+        0 0 40px #7B2D26, 
+        0 0 50px #7B2D26, 
+        0 0 75px #7B2D26;
+}
+
+
+.bb {
+    background-color: #EDFFAB !important;
+}
+.zm {
+    background-color: #C8FFBE !important;
+}
+.rv {
+    background-color: #7F95D1 !important;
+}
+.gg {
+    background-color: #FFC0BE !important;
+}
+.pf {
+    background-color: #C1C1C1 !important;
+}
+.ar {
+    background-color: #EFE9F4 !important;
+}
+.blanc {
+    background-color: #FFFFFF !important;
+}
+
+/* CAROUSEL */
+.glide__slide {
+  display: flex;        /* Active Flexbox */
+  align-items: center;  /* Centre verticalement les éléments dans le conteneur */
+  justify-content: center; /* Centre horizontalement les éléments (optionnel si déjà centré) */
+  height: 200px;        /* Fixe une hauteur pour aligner correctement les images */
+}
+
+.glide__slide img {
+  width: 100%;          /* Ajuste la largeur au conteneur */
+  max-width: 250px;     /* Limite la largeur maximum */
+  height: auto;         /* Laisse la hauteur s'ajuster automatiquement */
+  object-fit: contain;  /* Préserve les proportions sans couper l'image */
+  border-radius: 8px;   /* Optionnel : arrondi les coins */
+  display: block;       /* Évite les espaces blancs autour des images */
+}
+
+
+.glide {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative; 
+    margin-bottom: 20px;
+}
+
+
+.glide__arrows {
+  position: absolute;
+  top: 45%; 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: auto; 
+  z-index: 10;
+  
+}
+
+.glide__arrow {
+  color: #885A89; 
+  border: none;
+  cursor: pointer;
+  border-radius: 50%; 
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: background-color 0.3s;
+}
+
+.glide__arrow--left {
+    margin-left: -90px; 
+     transform: scaleX(-1) ;
+}
+.glide__arrow--right {
+    margin-right: -90px; 
+  }
+@media (max-width: 1000px){
+     .glide {
+    max-width: 600px; 
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .glide__arrow--left {
+    margin-left: -90px; 
+     transform: scaleX(-1);
+}
+.glide__arrow--right {
+    margin-right: -90px; 
+  }
+}
+@media (max-width: 700px) {
+  .glide {
+    max-width: 100%; 
+    margin: 0 auto; 
+    margin-bottom: 20px;
+  }
+  .glide__arrow--left {
+    margin-left: -10px; 
+     transform: scaleX(-1);
+}
+.glide__arrow--right {
+    margin-right: -10px; 
+  }
+}
+.parte{
+    display: flex;
+    justify-content: center;
+    font-family: Cinzel;
+    color: #885A89;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
